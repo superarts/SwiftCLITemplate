@@ -13,6 +13,8 @@ Swift CLI template based on Swift Package Manager, with a simple script to gener
   - [Why `SPM`?](#why-spm)
   - [Why those dependencies?](#why-those-dependencies)
   - [Why Makefile?](#why-makefile)
+  - [Why fixed dependency / limited features / generator via shell script... ?](#why-fixed-dependency--limited-features--generator-via-shell-script-)
+- [TODO](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
