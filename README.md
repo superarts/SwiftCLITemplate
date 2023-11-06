@@ -1,12 +1,30 @@
 # Swift CLI Template
 
-Swift CLI templated based on Swift Package Manager.
+Swift CLI template based on Swift Package Manager, with a simple script to generate your CLI project.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Contents
+
+- [How to use](#how-to-use)
+- [FAQ](#faq)
+  - [Why CLI?](#why-cli)
+  - [Why Swift CLI?](#why-swift-cli)
+  - [Why `SPM`?](#why-spm)
+  - [Why those dependencies?](#why-those-dependencies)
+  - [Why Makefile?](#why-makefile)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## How to use
 
-- clone this repo
-- perform some magic
-- profit
+- Clone this repo.
+- Open terminal and `cd DOWNLOADED_REPO_PATH/SwiftCLITempalte`.
+- Run `./generate-cli-project.sh` for help.
+  - Example: run `./generate-cli-project.sh MyCLIProject my-cli`
+- `cd MyCLIProject` and write your CLI logic.
+  - `make` to build and run your CLI project.
+  - `make test` to run unit tests.
 
 ## FAQ
 
@@ -43,3 +61,15 @@ Having these being said, Xcode allows you to debug in GUI if needed. If that's t
 
 - Feel free to run `swift build` and so on, it's the same thing. However `make` is faster to type and already became my muscle memory.
 - You don't need to learn the whole `make` system to use it. Like `vim`, even knowing 5% of `make` will save you a lot of time in CLI world.
+
+### Why fixed dependency / limited features / generator via shell script... ?
+
+This is why I make this project open source! Feel free to make your own changes.
+
+## TODO
+
+Here are some to-do items from myself:
+
+- [ ] Replace the generator script with a Swift CLI utility.
+- [ ] Setup dependency via CLI argument.
+- [ ] Setup Swift version via CLI argument.
