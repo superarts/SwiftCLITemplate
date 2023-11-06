@@ -34,6 +34,14 @@ let package = Package(
             .upToNextMinor(from: "1.2.3")
         ),
         // packageCLI,
+        .package(
+            url: "https://github.com/Quick/Quick.git", 
+            .upToNextMinor(from: "7.3.0")
+        ),
+        .package(
+            url: "https://github.com/Quick/Nimble.git", 
+            .upToNextMinor(from: "13.0.0")
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -45,15 +53,17 @@ let package = Package(
                     name: "ArgumentParser",
                     package: "swift-argument-parser"
                 ),
+                /*
                 .product(
-                    name: "SwiftCLITemplate",
-                    package: "SwiftCLITemplate"
+                    name: "packageCLI",
+                    package: "packageCLI"
                 ),
+                */
             ]
         ),
         .testTarget(
             name: "SwiftCLITemplateTests",
-            dependencies: ["SwiftCLITemplate"]
+            dependencies: ["SwiftCLITemplate", "Quick", "Nimble"]
         ),
     ]
 )

@@ -1,15 +1,18 @@
 NAME=swift-cli-template
 
-all: clean debug
+all: debug
 	./$(NAME)
 
 debug:
 	swift build
 	cp ./.build/debug/$(NAME) .
 
-release:
+release: clean
 	swift build -c release
 	cp ./.build/release/$(NAME) .
+
+test:
+	swift test
 
 clean:
 	rm -rf $(NAME)
