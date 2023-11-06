@@ -1,14 +1,14 @@
 import ArgumentParser
 
 struct SwiftCLITemplate: ParsableCommand {
-    @Flag(help: "Include a counter with each repetition.")
-    var includeCounter = false
+    @Argument(help: "The phrase to repeat.")
+    var phrase: String
 
     @Option(name: .shortAndLong, help: "The number of times to repeat 'phrase'.")
     var count: Int?
 
-    @Argument(help: "The phrase to repeat.")
-    var phrase: String
+    @Flag(help: "Include a counter with each repetition.")
+    var includeCounter = false
 
     func run() throws {
         let repeatCount = count ?? .max
