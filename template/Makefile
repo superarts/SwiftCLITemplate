@@ -1,6 +1,6 @@
 NAME=swift-cli-template
 
-all: debug
+all: clean debug
 	./$(NAME)
 
 debug:
