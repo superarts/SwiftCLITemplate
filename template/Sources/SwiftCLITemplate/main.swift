@@ -1,7 +1,6 @@
 import ArgumentParser
-import SwiftCLITemplate
 
-struct Repeat: ParsableCommand {
+struct SwiftCLITemplate: ParsableCommand {
     @Flag(help: "Include a counter with each repetition.")
     var includeCounter = false
 
@@ -24,4 +23,4 @@ struct Repeat: ParsableCommand {
     }
 }
 
-Repeat.main()
+SwiftCLITemplate.main()
