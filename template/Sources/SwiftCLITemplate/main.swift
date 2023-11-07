@@ -4,7 +4,7 @@ struct SwiftCLITemplate: ParsableCommand {
     @Argument(help: "The phrase to repeat.")
     var phrase: String
 
-    @Option(name: .shortAndLong, help: "The number of times to repeat 'phrase'.")
+    @Option(name: .long, help: "The number of times to repeat 'phrase'.")
     var count: Int?
 
     @Flag(help: "Include a counter with each repetition.")

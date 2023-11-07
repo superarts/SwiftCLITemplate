@@ -15,6 +15,7 @@ Swift CLI template based on Swift Package Manager, with a simple script to gener
   - [Why Makefile?](#why-makefile)
   - [Why fixed dependency / limited features / generator via shell script... ?](#why-fixed-dependency--limited-features--generator-via-shell-script-)
 - [TODO](#todo)
+- [Used by](#used-by)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -75,3 +76,7 @@ Here are some to-do items from myself:
 - [ ] Replace the generator script with a Swift CLI utility.
 - [ ] Setup dependency via CLI argument.
 - [ ] Setup Swift version via CLI argument.
+
+## Used by
+
+- [XStringCatalog](https://github.com/superarts/XStringCatelog)
