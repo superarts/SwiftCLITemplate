@@ -7,6 +7,7 @@ fi
 echo NEW_PROJECT_NAME: $1
 echo NEW_BINARY_NAME: $2
 
+rm -rf template/.build
 cp -r template $1
 
 echo Updating files...
